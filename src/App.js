@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import Themeone from './components/Themeone';
+import Themetwo from './components/Themetwo';
 
+// import { header,Data,styles} from './Data';
+import { header,Data,styles,labels} from './BlackThemeData';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Themeone styles={styles} data={Data} header={header} grid={styles.grid3} type={styles.type} /> */}
+    <Themetwo styles={styles} labels={labels} data={Data} header={header} grid={styles.grid2} type={styles.type} />
+
+    </>
   );
 }
 
